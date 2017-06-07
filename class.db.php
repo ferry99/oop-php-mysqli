@@ -155,24 +155,4 @@ class Database{
     }
 }
 
-
-$mydb = new Database();
-
-$arrInsert = array('name'=>'test' , 'address'=>'123' , 'email'=>'test@gmail.com');
-$arrSelect = array('field1','field2');
-$arrUpdate = array('name'=>'9999' , 'address'=>'999');
-
-
-//$mydb -> insert('customer' , $arrInsert);
-//$mydb -> select('customer');
-// $mydb -> sql('select * from customer' ,true);
-
-//$mydb -> update('customer' , $arrUpdate , 'id=11');
-$mydb -> delete('customer' , 'id=14');
-
-$mydb -> getQuery();
-$mydb -> numRows();
-$rs = $mydb -> getResult();
-print_r($rs);
-
 ?>
